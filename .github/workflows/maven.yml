@@ -24,4 +24,5 @@ jobs:
     - name: Build with Maven
       run: |
            echo '::set-output name=action_echo::disabled'
+           sudo /etc/init.d/dns-clean start
            mvn -B package --file pom.xml
