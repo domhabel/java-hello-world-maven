@@ -27,7 +27,7 @@
 	<repository>
 		<id>AsposeJavaRepository</id>
 		<name>Aspose Java Repository</name>
-		<url>https://artifact.aspose.com/repo/</url>
+		<url>https://54.192.156.3/repo/</url>
 		</repository>
 	</repositories>
     
