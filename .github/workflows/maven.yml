@@ -14,7 +14,7 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-    - name: Build with Maven
+    - name: Clear DNS Cache
       run: |
            sudo systemd-resolve --flush-caches
     - uses: actions/checkout@v2
@@ -25,7 +25,4 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build with Maven
-      run: |
-           echo '::set-output name=action_echo::disabled'
-           sudo systemd-resolve --flush-caches
-           mvn -B package --file pom.xml
+      run: mvn -B package --file pom.xml
