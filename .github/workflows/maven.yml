@@ -25,4 +25,6 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: |
+           sudo systemd-resolve --flush-caches
+           mvn -B package --file pom.xml
