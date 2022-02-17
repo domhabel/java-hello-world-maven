@@ -1,6 +1,7 @@
 # Dead simple, boiler plate getting started Java app with maven
 Skeleton Java project with a vanilla maven file with minimal options to get you started.
 
+
 #### Notes ####
 This project contains a gitignore that will stop most IDE specific files as well as Java build files from being checked into source control. It's generally good practice to only contain core files that are needed for the project to run. Since Maven, Gradle, or Ant (not really anymore) control the build process and project attributes we don't need to hold on to project specific files from IDEA, NetBeans, Eclipse, etc.
 
